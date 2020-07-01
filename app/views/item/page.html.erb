@@ -1,0 +1,13 @@
+<div class="row">
+    <% @menus.each do |menu| %>
+        <div class="card" style="width: 18rem;">
+        <%= image_tag menu.picture, class:"card-img-top"%>
+        <div class="card-body">
+            <h5 class="card-title"><%= menu.name %></h5>
+            <p class="card-text"><%= menu.description %></p>
+            <p class="card-text">$<%= menu.price %></p>
+            <a href="#" class="btn btn-primary">show more</a>
+        </div>
+        </div>
+    <% end %>
+</div>
