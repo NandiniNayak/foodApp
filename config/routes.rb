@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :orders
   get 'item/page'
   resources :menus
   devise_for :users
