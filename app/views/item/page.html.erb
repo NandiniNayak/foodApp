@@ -1,7 +1,7 @@
 <div class="row">
     <% @menus.each do |menu| %>
         <div class="card" style="width: 18rem;">
-        <%= image_tag menu.picture, class:"card-img-top"%>
+        <%= image_tag menu.picture, class:"card-img-top" if menu.picture.attached?%>
         <div class="card-body">
             <h5 class="card-title"><%= menu.name %></h5>
             <p class="card-text"><%= menu.description %></p>
